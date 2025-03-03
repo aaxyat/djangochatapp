@@ -9,6 +9,7 @@ dependencies = [
     "django-browser-reload>=1.18.0",
     "djangorestframework>=3.15.2",
     "drf-spectacular>=0.28.0",
+    "pillow>=11.1.0",
     "python-dotenv>=1.0.1",
 ]
 

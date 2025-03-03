@@ -20,7 +20,8 @@ class ServerListViewSet(viewsets.ViewSet):
       - Example: `?category=gaming`
     - **qty** (int, optional): Limit the number of returned servers.
       - Example: `?qty=10`
-    - **by_user** (bool, optional): Filter servers that the authenticated user is a member of.
+    - **by_user** (bool, optional): Filter servers that the authenticated user is a member
+    of.
       - Authentication required.
       - Example: `?by_user=true`
     - **by_serverid** (int, optional): Retrieve a specific server by ID.

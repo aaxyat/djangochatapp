@@ -27,12 +27,15 @@ class ServerSerializer(serializers.ModelSerializer):
     It excludes the 'member' field from serialization.
 
     Attributes:
-        num_members (SerializerMethodField): A method field that returns the number of server members
-        channel_server (ChannelSerializer): Nested serializer for related channels with many=True relationship
+        num_members (SerializerMethodField): A method field that returns the number of
+        server members
+        channel_server (ChannelSerializer): Nested serializer for related channels with
+        many=True relationship
 
     Methods:
         get_num_members(obj): Returns the number of members if the attribute exists
-        to_representation(instance): Customizes the serialized representation by handling num_members field
+        to_representation(instance): Customizes the serialized representation by handling
+        num_members field
 
     Example:
         ```
