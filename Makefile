@@ -3,16 +3,16 @@
 runserver:
 	@while true; do \
 		echo "Starting Django server..."; \
-		python backend/manage.py runserver || echo "Server crashed. Restarting..."; \
+		uv run python backend/manage.py runserver || echo "Server crashed. Restarting..."; \
 		sleep 2; \
 	done
 
 
 makemigrations:
-	python backend/manage.py makemigrations
+	uv run python backend/manage.py makemigrations
 
 migrate:
-	python backend/manage.py migrate
+	uv run python backend/manage.py migrate
 
 createsuperuser:
 	python backend/manage.py createsuperuser

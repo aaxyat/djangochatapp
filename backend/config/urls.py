@@ -22,7 +22,7 @@ from rest_framework.routers import DefaultRouter
 from server import views
 
 router = DefaultRouter()
-router.register("api/server/select/", views.ServerListViewSet, basename="server")
+router.register("api/server/select", views.ServerListViewSet, basename="server")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
