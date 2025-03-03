@@ -1,0 +1,11 @@
+[project]
+name = "djangochatapp"
+version = "0.1.0"
+description = "A Django and react Chat Project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "django>=5.1.6",
+    "djangorestframework>=3.15.2",
+    "python-dotenv>=1.0.1",
+]
