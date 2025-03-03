@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info:
+  title: DjangoChatAPI
+  version: 1.0.0
+  description: Django API for Chat Application
+paths: {}
+components: {}
